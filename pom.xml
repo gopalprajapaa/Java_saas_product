@@ -106,14 +106,16 @@
 		</plugins>
 	</build>
 
+    <profiles>
+        <profile>
+            <id>production</id>
+            <properties>
+                <spring.profiles.active>production</spring.profiles.active>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
 
-<profiles>
-<profile>
-    <id>production</id>
-    <properties>
-        <spring.profiles.active>production</spring.profiles.active>
-    </properties>
-</profile>
-</profiles>
+
 
